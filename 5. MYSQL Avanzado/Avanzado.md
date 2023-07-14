@@ -7,3 +7,6 @@
 
 ## Procedimientos almacenados
 
+1. **Sintaxis**
+
+2. **Delimiter**
