@@ -1,16 +1,16 @@
 /* Crear tablas con SELECT */
 
--- Crear una tabla nueva llamada "tempPais" con los nombres y poblaciones de los países que tienen menos de 100 millones de habitantes
+/*  Crear una tabla nueva llamada "tempPais" con los nombres y poblaciones de los países que tienen menos de 100 millones de habitantes */
 CREATE TABLE tempPais
 AS
 SELECT nombre, poblacion
 FROM pais
 WHERE poblacion < 100000000;
 
--- Obtener la estructura de la tabla "tempPais"
+/* Obtener la estructura de una tabla */
 DESCRIBE tempPais;
 
--- Crear la tabla "ciudad" con una llave foránea que referencia al campo "id" de la tabla "pais"
+/* Crear tabla con una llave foránea que referencia otra tabla" */
 CREATE TABLE ciudad (
     id int PRIMARY KEY,
     nombre varchar(20),
@@ -19,30 +19,31 @@ CREATE TABLE ciudad (
     REFERENCES pais (id)
 );
 
--- Seleccionar los nombres de los países con un alias "nombre_pais"
+/*  Seleccionar  con un alias "nombre_pais" */
 SELECT nombre AS nombre_pais
 FROM pais;
 
--- Seleccionar los nombres de los países y sus ciudades correspondientes con alias de tablas
+/* Hacer call con alias de tablas */
 SELECT p.nombre AS nombre_pais, c.nombre AS nombre_ciudad
 FROM pais AS p
 JOIN ciudad AS c ON p.id = c.id_pais;
 
--- Concatenar los nombres y apellidos de los clientes en un solo campo con alias "nombre_completo"
+/* Concatenar datos  */
 SELECT CONCAT(nombre, ' ', apellido) AS nombre_completo
 FROM clientes;
 
--- Asignar la categoría "Alto" o "Bajo" a los productos según su precio
+/*   Asignar un atributo segun una condición */
 SELECT nombre, precio, IF(precio > 100, 'Alto', 'Bajo') AS categoria_precio
 FROM productos;
 
--- Combinar los nombres de los países y sus ciudades correspondientes utilizando INNER JOIN
+/* Combinar utilizando INNER JOIN */
 SELECT p.nombre AS nombre_pais, c.nombre AS nombre_ciudad
 FROM pais AS p
 INNER JOIN ciudad AS c ON p.id = c.id_pais;
 WHERE pais.nombre = "México"
-
 LEFT JOIN:
+
+
 //--La sintaxis de los LEFT JOIN es la siguiente:
 SELECT column_name(s)
 FROM table1
