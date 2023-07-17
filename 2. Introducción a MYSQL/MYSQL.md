@@ -3,7 +3,6 @@
 - [Características](#introducción-mysql)
 - [Ventajas](#ventajas-de-mysql)
 - [Historia](#historia-de-mysql)
-- [Clientes](#clientes-de-mysql)
 
 ## Características de MySQL
 
@@ -25,11 +24,3 @@ MySQL ofrece ventajas como escalabilidad, alto rendimiento, flexibilidad, soport
 
 MySQL se originó en 1994 y se lanzó públicamente en 1995. Ha sido desarrollado por Michael Widenius y David Axmark. En 2000, MySQL AB fue fundada para brindar servicios comerciales y soporte. Sun Microsystems adquirió MySQL AB en 2008, y luego Oracle Corporation adquirió Sun en 2010. MySQL ha evolucionado con múltiples versiones, siendo MySQL 8.0 lanzado en 2019. Ha ganado popularidad por su rendimiento, escalabilidad y facilidad de uso, y es ampliamente utilizado en diferentes aplicaciones y empresas.
 
-## Clientes de MySQL
-
-| Nombre          | S.O                   | Licencia  | Lenguaje de Desarrollo | Descripción                                                                                         | Tutorial/Descarga                                                          |
-| --------------- | --------------------- | --------- | ---------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| MySQL Workbench | Windows, macOS, Linux | Comercial | C/C++                  | MySQL Workbench es una herramienta gráfica de administración y diseño de bases de datos MySQL.      | [Enlace al tutorial/descarga](https://www.youtube.com/watch?v=nv9GCue0YwM) |
-| phpMyAdmin      | Multiplataforma       | GPL       | PHP                    | phpMyAdmin es una aplicación web de código abierto escrita en PHP.                                  | [Enlace al tutorial/descarga](https://www.youtube.com/watch?v=36ritPuyd00) |
-| Navicat         | Windows, macOS, Linux | Comercial | C/C++                  | Navicat es una herramienta de administración de bases de datos con soporte para múltiples sistemas. | [Enlace al tutorial/descarga](https://www.youtube.com/watch?v=vDugMMcP5xY) |
-| HeidiSQL        | Windows               | GPL       | Delphi                 | HeidiSQL es una herramienta de administración de bases de datos MySQL.                              | [Enlace al tutorial/descarga](https://www.youtube.com/watch?v=UB9oPDDlvcI) |
