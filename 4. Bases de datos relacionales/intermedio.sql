@@ -44,43 +44,43 @@ WHERE pais.nombre = "México"
 LEFT JOIN:
 
 
-//--La sintaxis de los LEFT JOIN es la siguiente:
+/* La sintaxis de los LEFT JOIN es la siguiente: */
 SELECT column_name(s)
 FROM table1
 LEFT JOIN table2
 ON table1.column_name = table2.column_name;
 
-//--Un ejemplo de uso de LEFT JOIN es listar todos los países y las ciudades que estén en la base de datos. La consulta SQL sería la siguiente:
+/* Un ejemplo de uso de LEFT JOIN es listar todos los países y las ciudades que estén en la base de datos. La consulta SQL sería la siguiente: */
 SELECT pais.nombre AS pais, ciudad.nombre AS ciudad
 FROM pais
 LEFT JOIN ciudad
 ON pais.id = ciudad.id_pais;
 
-//--RIGHT JOIN:
-//--La cláusula RIGHT JOIN devuelve todos los registros de la tabla derecha y los registros coincidentes de la tabla izquierda. El resultado es NULL en el lado izquierdo si no hay coincidencia.
-//--La sintaxis de los RIGHT JOIN es la siguiente:
+/* RIGHT JOIN:
+La cláusula RIGHT JOIN devuelve todos los registros de la tabla derecha y los registros coincidentes de la tabla izquierda. El resultado es NULL en el lado izquierdo si no hay coincidencia.
+La sintaxis de los RIGHT JOIN es la siguiente: */
 SELECT column_name(s)
 FROM table1
 RIGHT JOIN table2
 ON table1.column_name = table2.column_name;
 
-    //--Un ejemplo de uso de RIGHT JOIN es listar todas las ciudades y los países a los que pertenecen. La consulta SQL sería la siguiente:
+/* Un ejemplo de uso de RIGHT JOIN es listar todas las ciudades y los países a los que pertenecen. La consulta SQL sería la siguiente: */
 SELECT pais.nombre AS pais, ciudad.nombre AS ciudad
 FROM pais
 RIGHT JOIN ciudad
 ON pais.id = ciudad.id_pais;
 
 
-//--RIGHT JOIN:
-//--La cláusula RIGHT JOIN devuelve todos los registros de la tabla derecha y los registros coincidentes de la tabla izquierda. El resultado es NULL en el lado izquierdo si no hay coincidencia.
-//--La sintaxis de los RIGHT JOIN es la siguiente:
+/* RIGHT JOIN:
+La cláusula RIGHT JOIN devuelve todos los registros de la tabla derecha y los registros coincidentes de la tabla izquierda. El resultado es NULL en el lado izquierdo si no hay coincidencia.
+La sintaxis de los RIGHT JOIN es la siguiente: */
 SELECT column_name(s)
 FROM table1
 RIGHT JOIN table2
 ON table1.column_name = table2.column_name;
 
 
-//--Un ejemplo de uso de RIGHT JOIN es listar todas las ciudades y los países a los que pertenecen. La consulta SQL sería la siguiente:
+/* Un ejemplo de uso de RIGHT JOIN es listar todas las ciudades y los países a los que pertenecen. La consulta SQL sería la siguiente: */
 SELECT pais.nombre AS pais, ciudad.nombre AS ciudad
 FROM pais
 RIGHT JOIN ciudad

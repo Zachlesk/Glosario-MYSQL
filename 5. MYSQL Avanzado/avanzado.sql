@@ -1,10 +1,9 @@
-
-//-- Ejemplo 1: Crear un procedimiento almacenado que lista las ciudades de un país por nombre
+/*  Ejemplo 1: Crear un procedimiento almacenado que lista las ciudades de un país por nombre */
 DELIMITER $$
-//-- Crea el procedimiento almacenado llamado "listar_ciudades_nom_pais"
+/*  Crea el procedimiento almacenado llamado "listar_ciudades_nom_pais" */
 CREATE PROCEDURE listar_ciudades_nom_pais(IN nom_pais VARCHAR(50))
 BEGIN
-    //-- Sentencia SQL para obtener las ciudades del país especificado
+    /*  Sentencia SQL para obtener las ciudades del país especificado */
     SELECT C.nombre
     FROM país AS P
     INNER JOIN ciudad AS C ON P.id = C.id_pais
@@ -13,12 +12,12 @@ END
 $$
 DELIMITER ;
 
-//-- Ejemplo 2: Crear un procedimiento almacenado que cuenta la cantidad de ciudades de un país
+/*  Ejemplo 2: Crear un procedimiento almacenado que cuenta la cantidad de ciudades de un país */
 DELIMITER $$
-//-- Crea el procedimiento almacenado llamado "contar_ciudades_nom_pais"
+/* Crea el procedimiento almacenado llamado "contar_ciudades_nom_pais" */
 CREATE PROCEDURE contar_ciudades_nom_pais(IN nom_pais VARCHAR(50), OUT total INT UNSIGNED)
 BEGIN
-    //-- Consulta SQL para contar las ciudades del país especificado
+    /* Consulta SQL para contar las ciudades del país especificado */
     SELECT COUNT(*) INTO total
     FROM país AS P
     INNER JOIN ciudad AS C ON P.id = C.id_pais
@@ -27,9 +26,9 @@ END
 $$
 DELIMITER ;
 
-//-- Llamadas a los procedimientos almacenados
+/* Llamadas a los procedimientos almacenados */
 
-//-- Ejemplo de llamada al procedimiento "listar_ciudades_nom_pais"
+/* Ejemplo de llamada al procedimiento "listar_ciudades_nom_pais" */
 DELIMITER ;
 //-- Llama al procedimiento "listar_ciudades_nom_pais" pasando el parámetro "Colombia"
 CALL listar_ciudades_nom_pais('Colombia');
